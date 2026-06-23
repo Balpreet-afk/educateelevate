@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>About — Educate & Elevate</title>
+<meta name="description" content="About Educate & Elevate — a study-abroad and immigration consultancy delivering personalised counseling, admission and visa services."/>
+<link rel="icon" href="assets/logo.jpeg"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/site.css"/>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-header"><div class="container">
+  <span class="eyebrow"><span class="dot"></span> About Us</span>
+  <h1 style="margin-top:14px">Educating folks. Elevating careers.</h1>
+  <p>More than thousands of individuals and students trust us with their study-abroad and immigration journeys.</p>
+</div></section>
+
+<section style="padding-top:30px"><div class="container">
+  <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center" class="reveal">
+    <div>
+      <p style="color:#445b6e;font-size:16px">Educate and Elevate has been specifically established for assisting individuals to meet their immigration and study abroad needs with expertise and hands on experience. More than thousands of individuals and students are associated with us to avail the best immigration and study abroad services. With years of experience, our team is able to provide exceptional counseling, admission and visa services to our valuable patrons.</p>
+    </div>
+    <div class="about-img"><img src="assets/grad.jpg" alt="Graduate looking at university"/></div>
+  </div>
+
+  <div class="section-head reveal" style="margin-top:80px">
+    <span class="eyebrow"><span class="dot"></span> Why Choose Us</span>
+    <h2>Delivering excellence is our forte</h2>
+    <p>Delivering excellence is our forte and therefore we never compromise with the quality of our services. This is the foremost reason that our clients are completely satisfied once they experience our way of working. With the depth and sufficient knowledge of this domain, we provide customized services to students and individuals as per their demand and requirements.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card reveal"><div class="ic-lg" id="ic1"></div><h3>IELTS Center</h3><p>When it comes to IELTS, then we understand its worth and essence while counseling you for better career. Thus, we prepare our students to score the required IELTS bands for stated country and university. It totally depends on choice of student whether they opt for student visa or immigration. In both cases, we provide personalized IELTS coaching to help them in a different way.</p></div>
+    <div class="card reveal"><div class="ic-lg" id="ic2"></div><h3>Our Adroit Professionals</h3><p>We are backed by team of expert counselors and other professionals that enable us to render quality and authentic services to our clients. We believe in transparency and thus give clear picture about the actual prospects of individual in the desired field. Our consultancy is highly admired for to its positive feedbacks and ethical dealings.</p></div>
+    <div class="card reveal"><div class="ic-lg" id="ic3"></div><h3>100% Client Satisfaction</h3><p>Being a quality certified and client-oriented consultancy, we strive hard to understand our customers demand in the most successful manner and to provide the right assistance accordingly. From counseling to visa process, we provide end to end information and guidance to choose the right pathway for excellent and successful results.</p></div>
+  </div>
+
+  <div class="badges reveal" style="margin-top:50px;grid-template-columns:repeat(6,1fr)" id="whyBadges"></div>
+
+  <div style="text-align:center;margin-top:50px">
+    <a href="index.html#lead-form" class="btn btn-primary">Start your journey →</a>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script>
+EE.buildNav('about.html'); EE.buildFooter();
+['ic1','ic2','ic3'].forEach((id,i)=>{document.getElementById(id).innerHTML=EE.icon(['star','brief','trophy'][i]);});
+const whyItems = [['star','Excellent Reputation'],['book','Specialized Knowledge'],['shield','Ethics & Transparent'],['lock','100% Confidentiality'],['brief','Professional Approach'],['trophy','High Success Rate']];
+document.getElementById('whyBadges').innerHTML = whyItems.map(([i,l])=>`<div class="badge"><div class="ic">${EE.icon(i)}</div>${l}</div>`).join('');
+EE.initReveal();
+</script>
+</body></html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Services — Educate & Elevate</title>
+<meta name="description" content="Full visa and immigration services: Permanent Residency, Student Visa, Work Permit, Skilled Migration, Family Visa, Visitor Visa, and IELTS Coaching."/>
+<link rel="icon" href="assets/logo.jpeg"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/site.css"/>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-header"><div class="container">
+  <span class="eyebrow"><span class="dot"></span> Our Services</span>
+  <h1 style="margin-top:14px">Every visa pathway, expertly handled</h1>
+  <p>From study and work to residency and visits — plus dedicated IELTS coaching, all under one roof.</p>
+</div></section>
+
+<section style="padding-top:30px"><div class="container">
+  <div class="cards" id="all-services"></div>
+
+  <div class="section-head reveal" style="margin-top:80px">
+    <span class="eyebrow"><span class="dot"></span> IELTS</span>
+    <h2>IELTS — General Training & Academics</h2>
+  </div>
+  <div class="cards" style="grid-template-columns:1fr 1fr">
+    <div class="card reveal"><h3>IELTS for General Training</h3><p>IELTS-General Training is meant for immigration and general purposes. This type of IELTS score helps individuals to improve their eligibility score as it adds weightage in the overall profile. General IELTS have four modules i.e. Listening, Speaking, Reading & Writing. Scores are given on 9-band scale in which one can score maximum of 9. However, there is no pass or fail in this test but a descent score is counted as 7.0 IELTS band.</p></div>
+    <div class="card reveal"><h3>IELTS for Academics</h3><p>For all the study abroad purposes, IELTS-Academics is used. Most of the countries require IELTS score for admission and visa. Each university and country has different requirements to accept the student and. The basic requirement for admission in countries is 6 or 6.5 IELTS band. Like General training, IELTS Academic also has 4 modules but there is a slight difference in marking pattern.</p></div>
+  </div>
+
+  <div class="section-head reveal" style="margin-top:80px">
+    <span class="eyebrow"><span class="dot"></span> Student Visa</span>
+    <h2>Visa Search — Student Visa Services</h2>
+  </div>
+  <div class="card reveal" style="max-width:920px;margin:0 auto">
+    <p>Career planning incontestably requires an expert's guidance in terms of gaining insight to the educational opportunities that are available worldwide. The students looking forward to start their educational tour overseas and planning to put their careers on a fast track; Educate & Elevate is of the leading education consultancy that helps you in hassle-free student visa services. At Educate & Elevate, we provide you with an immense range of special, high quality of educational universities/colleges all over the globe and great opportunities of professional career. The multifarious career opportunities offered by various countries, attract students from different countries of the world to study and settle there. We guide you with a hassle-free process that helps you selecting, applying and procuring admission to foreign Colleges / Universities. Moreover, association with pre-requisites of admission process and other formalities is the most important concern at our team.</p>
+  </div>
+
+  <div style="text-align:center;margin-top:50px">
+    <a href="index.html#lead-form" class="btn btn-primary">Start your profile assessment →</a>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script>
+EE.buildNav('services.html'); EE.buildFooter();
+const services = [
+  ['Permanent Residency','With huge popularity and attraction towards permanent residency in developed and globally admired countries like Canada, Australia and New Zealand, we are here to help you in migrating to your desired country for better future aspects.','map'],
+  ['Study/Student Visa','The increased value of foreign education or degree has encouraged almost every student to pursue their education from abroad. Acquiring student visa involves knowledge and accurate process. We assist student to opt right country and program as per their interest.','book'],
+  ['Work Permit',"Getting a job in your dream destination is not enough until you don't get your visa approved. We provide end to end assistance on work permit and to grab the work rights with less documentation and quick visa approval.",'brief'],
+  ['Skilled Migration','With specific skill-set in academics enables you to apply for skilled migration in any of the countries. Your skills will get you a place in foreign country because of demand and value. We help individuals to seize this opportunity.','trophy'],
+  ['Family Visa','Family Visa provides the authority to live and migrate from one country to another with all your family members. The presence of one or more family member in a certain country enables rest of the family to immigrate to that country as well. The family reunification provisions at Educate & Elevate are made to respect the right of a family to live together. The family visa service takes care of all the laws of immigration. Spousal immigration is another option of family reunification or immigration via marriage. If your relatives hold a Permanent Residency or Citizenship status, all you need is a sponsorship letter from your relative / blood relative to file the application besides other requirements to be met.','shield'],
+  ['Visitor Visa','Be it any occasion, traveling abroad has always been interesting. If you are planning to travel across the world, all you require is a Visitor Visa or Temporary Resident Permit (TRP). Educate & Elevate provides you with easy and comprehensible Visitor visa application process. You are just required to clear the medical examination for your entry in that country, to ensure that you are not suffering from any serious medical problem or any threatening ailment which may endanger their people.','plane'],
+  ['IELTS Coaching','Understanding the significance of IELTS in both study abroad and immigration, Educate & Elevate has its own IELTS coaching center for both segments that help students as well as individuals to boost their IELTS score and attain the desired one. We have faculty members who have immense industry experience to train students and work on their English Proficiency. They provide know-how tips & tricks to students to crack the IELTS exam & gain the eligible score. We have different faculty for both General training and academics as it helps students to get the most effective results.','star']
+];
+document.getElementById('all-services').innerHTML = services.map(([t,d,ic])=>`<div class="card reveal"><div class="ic-lg">${EE.icon(ic)}</div><h3>${t}</h3><p>${d}</p></div>`).join('');
+EE.initReveal();
+</script>
+</body></html>
