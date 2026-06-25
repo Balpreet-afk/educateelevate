@@ -1,1 +1,0 @@
-import{t as e}from"./index-BVFryOF2.js";var t=e();function n(){return(0,t.jsx)(`iframe`,{src:`/site/index.html`,title:`Educate & Elevate`,style:{position:`fixed`,inset:0,width:`100%`,height:`100%`,border:0}})}export{n as component};
