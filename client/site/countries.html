@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Countries — Educate & Elevate</title>
+<meta name="description" content="Explore study-abroad destinations: USA, Australia, Canada, UK, New Zealand, and 10 European countries — top universities, courses, tuition and income at a glance."/>
+<link rel="icon" href="assets/logo.jpeg"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/site.css"/>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-header"><div class="container">
+  <span class="eyebrow"><span class="dot"></span> Destinations</span>
+  <h1 style="margin-top:14px">Countries we send students to</h1>
+  <p>Top universities, popular courses, tuition and living costs — for every destination we support.</p>
+</div></section>
+
+<section class="country-info" style="padding-top:30px"><div class="container">
+  <div id="all-countries"></div>
+  <div style="text-align:center;margin-top:30px">
+    <a href="index.html#lead-form" class="btn btn-primary">Find your best-fit country →</a>
+  </div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script>
+EE.buildNav('countries.html'); EE.buildFooter();
+EE.renderAllCountries('all-countries');
+EE.initReveal();
+</script>
+</body></html>

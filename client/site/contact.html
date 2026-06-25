@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Contact — Educate & Elevate</title>
+<meta name="description" content="Contact Educate & Elevate — phone, WhatsApp, email and social. Start your study-abroad assessment today."/>
+<link rel="icon" href="assets/logo.jpeg"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/site.css"/>
+</head>
+<body>
+<div id="site-nav"></div>
+
+<section class="page-header"><div class="container">
+  <span class="eyebrow"><span class="dot"></span> Contact</span>
+  <h1 style="margin-top:14px">Let's talk about your journey</h1>
+  <p>Reach us directly, or fill the form — a counselor will follow up.</p>
+</div></section>
+
+<section style="padding-top:30px"><div class="container">
+  <div class="form-wrap">
+    <div class="form-side reveal">
+      <div class="card" style="margin-bottom:14px">
+        <div class="ic-lg" id="ph"></div>
+        <h3>Phone / WhatsApp</h3>
+        <p><a href="tel:+918287771612" style="font-weight:600">+91 8287771612</a></p>
+      </div>
+      <div class="card" style="margin-bottom:14px">
+        <div class="ic-lg" id="ml"></div>
+        <h3>Email</h3>
+        <p><a href="mailto:contact@educateandelevate.in" style="font-weight:600">contact@educateandelevate.in</a></p>
+      </div>
+      <div class="card">
+        <h3>Follow us</h3>
+        <div style="display:flex;gap:10px;margin-top:8px">
+          <a class="btn btn-ghost" href="https://www.instagram.com/educateandelevates/" target="_blank">Instagram</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/educateandelevate.in/" target="_blank">Facebook</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/company/educate-and-elevates/?originalSubdomain=in" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="form-card reveal">
+        <h3>Profile assessment</h3>
+        <div class="sub">Fields appear one at a time.</div>
+        <div class="form-progress"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <!-- TODO: Replace [ADD_YOUR_ENDPOINT_URL_HERE] with your form endpoint URL -->
+        <form id="leadForm" action="[ADD_YOUR_ENDPOINT_URL_HERE]" method="POST" novalidate>
+          <div class="field" data-field="name"><label>Full Name</label><input name="name" type="text" required/></div>
+          <div class="field" data-field="email"><label>Email</label><input name="email" type="email" required/></div>
+          <div class="field" data-field="phone"><label>Phone</label><input name="phone" type="tel" required/></div>
+          <div class="field" data-field="country"><label>Preferred Destination Country</label>
+            <select name="country" required>
+              <option value="">Select a country</option>
+              <option value="usa">USA</option><option value="australia">Australia</option>
+              <option value="canada">Canada</option><option value="uk">United Kingdom</option>
+              <option value="newzealand">New Zealand</option><option value="europe">Europe</option>
+            </select>
+          </div>
+          <div class="field" data-field="europeSub"><label>Europe — Sub-country</label>
+            <select name="europeSub">
+              <option value="">Any / Compare all</option>
+              <option value="germany">Germany</option><option value="france">France</option>
+              <option value="sweden">Sweden</option><option value="malta">Malta</option>
+              <option value="ireland">Ireland</option><option value="latvia">Latvia</option>
+              <option value="lithuania">Lithuania</option><option value="italy">Italy</option>
+              <option value="denmark">Denmark</option><option value="poland">Poland</option>
+            </select>
+          </div>
+          <div class="field" data-field="purpose"><label>Purpose</label>
+            <select name="purpose" required>
+              <option value="">Select purpose</option>
+              <option>Study/Student Visa</option><option>Permanent Residency</option>
+              <option>Work Permit</option><option>Skilled Migration</option>
+              <option>Family Visa</option><option>Visitor Visa</option>
+            </select>
+          </div>
+          <div class="field" data-field="qualification"><label>Highest Qualification Completed</label><input name="qualification" type="text"/></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Submit</button>
+        </form>
+        <div class="recap"></div>
+        <div class="thanks"><strong>Thank you — we'll be in touch shortly.</strong></div>
+      </div>
+    </div>
+  </div>
+  <div id="country-info-target" style="margin-top:40px"></div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="js/site.js"></script>
+<script>
+EE.buildNav('contact.html'); EE.buildFooter();
+document.getElementById('ph').innerHTML = EE.icon('phone');
+document.getElementById('ml').innerHTML = EE.icon('mail');
+EE.initForm('leadForm');
+EE.initReveal();
+</script>
+</body></html>
