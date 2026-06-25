@@ -250,7 +250,7 @@
       }
       if(thanks){ thanks.classList.add('show'); }
       // NOTE: Replace action URL above to enable real submission.
-      // form.submit(); // uncomment once an endpoint URL is set.
+      form.submit(); // uncomment once an endpoint URL is set.
       const target = document.getElementById("ctn");
       target.scrollIntoView({behavior:'smooth',block:'start'});
     });
